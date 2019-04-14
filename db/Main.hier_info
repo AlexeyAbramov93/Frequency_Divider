@@ -1,0 +1,32 @@
+|Main
+inClk => inClk.IN1
+reset => reset.IN1
+divider[0] => divider[0].IN1
+divider[1] => divider[1].IN1
+divider[2] => divider[2].IN1
+outClk << Frequency_divider:frequency_divider.outClk
+
+
+|Main|Frequency_divider:frequency_divider
+inClk => counter[0].CLK
+inClk => counter[1].CLK
+inClk => counter[2].CLK
+inClk => counter[3].CLK
+inClk => counter[4].CLK
+inClk => counter[5].CLK
+inClk => counter[6].CLK
+inClk => counter[7].CLK
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+reset => counter[5].ACLR
+reset => counter[6].ACLR
+reset => counter[7].ACLR
+divider[0] => Mux0.IN2
+divider[1] => Mux0.IN1
+divider[2] => Mux0.IN0
+outClk <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "outClk",
+					"strict" : false
+				},
+				{
+					"name" : "divider[0]",
+					"strict" : false
+				},
+				{
+					"name" : "divider[1]",
+					"strict" : false
+				},
+				{
+					"name" : "divider[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inClk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
